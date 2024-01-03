@@ -30,26 +30,26 @@ form.addEventListener("submit", (e) => {
 
   newConfigV2ray = uid + "@" + NewDomainAndConfig + "#" + configName;
   message.textContent =
-    "روی دکمه کپی بزنین و سرور جدیدتون را به برنامتون اضافه کنید.";
+    "متن سرور را کپی و به برنامه ی خود اضافه کنید";
   output.textContent = newConfigV2ray;
   container.style.display = "block";
 });
 
-button.addEventListener("click", function (e) {
-  if (newConfigV2ray === undefined) {
-    alert("لطفا کانفیگتون رو وارد کنید.");
-    return;
-  }
-  e.stopPropagation();
+// button.addEventListener("click", function (e) {
+//   if (newConfigV2ray === undefined) {
+//     alert("لطفا کانفیگتون رو وارد کنید.");
+//     return;
+//   }
+//   e.stopPropagation();
 
-  if (navigator.clipboard) {
-    navigator.clipboard.writeText(newConfigV2ray);
-    alert("سرور کپی شد");
-    return; //codes below wont be executed
-  }
+//   if (navigator.clipboard) {
+//     navigator.clipboard.writeText(newConfigV2ray);
+//     alert("سرور کپی شد");
+//     return; //codes below wont be executed
+//   }
 
-  output.focus();
-  output.select();
+//   output.focus();
+//   output.select();
 
-  document.execCommand("copy");
-});
+//   document.execCommand("copy");
+// });
