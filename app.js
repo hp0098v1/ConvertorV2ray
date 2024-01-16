@@ -7,7 +7,7 @@ const button = document.getElementById("copy-btn");
 
 let newConfigV2ray;
 const NewDomainAndConfig =
-  "node.hp0098v1.online:2096?type=ws&path=%2F&host=cdn.hp0098v1.online&security=tls&fp=chrome&sni=cdn.hp0098v1.online";
+  "node.hpvip.online:2096?type=ws&path=%2F&host=cdn.hpvip.online&security=tls&fp=chrome&sni=cdn.hpvip.online";
 
 input.addEventListener("keyup", (e) => {
   if (e.target.value === "") {
@@ -29,8 +29,7 @@ form.addEventListener("submit", (e) => {
   const configName = inputValue.split("@")[1].split("#")[1];
 
   newConfigV2ray = uid + "@" + NewDomainAndConfig + "#" + configName;
-  message.textContent =
-    "متن سرور را کپی و به برنامه ی خود اضافه کنید";
+  message.textContent = "متن سرور را کپی و به برنامه ی خود اضافه کنید";
   output.textContent = newConfigV2ray;
   container.style.display = "block";
 });
