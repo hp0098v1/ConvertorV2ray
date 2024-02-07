@@ -7,7 +7,7 @@ const button = document.getElementById("copy-btn");
 
 let newConfigV2ray;
 const NewDomainAndConfig =
-  "node.hpvip.online:2096?type=ws&path=%2F&host=cdn.hpvip.online&security=tls&fp=chrome&sni=cdn.hpvip.online";
+  "node.in-network.top:2096?type=ws&path=%2F&host=cdn.in-network.top&security=tls&fp=chrome&sni=cdn.in-network.top";
 
 input.addEventListener("keyup", (e) => {
   if (e.target.value === "") {
